@@ -8,7 +8,7 @@ import java.util.WeakHashMap;
 /**
  * 剑指offer
  */
-public class LeetCode20211028 {
+public class LeetCode2021_10_28 {
     /**
      * 栈模拟队列：
      */

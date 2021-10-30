@@ -3,7 +3,7 @@ package offer;
 /**
  * 剑指offer
  */
-public class LeetCode20211029 {
+public class LeetCode2021_10_29 {
     public class ListNode {
         int val;
         ListNode next;
