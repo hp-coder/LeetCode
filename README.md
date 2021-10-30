@@ -1,5 +1,4 @@
-# LeetCode
-LeetCode
+# Self-salvation
 ## Code
 ## Work
 ## Sleep
