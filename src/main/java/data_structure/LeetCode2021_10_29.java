@@ -88,9 +88,9 @@ public class LeetCode2021_10_29 {
                 stack.push(root);
                 root = root.left;
             }
-            TreeNode pop = stack.pop();
-            list.add(pop.val);
-            root = pop.right;
+            root = stack.pop();
+            list.add(root.val);
+            root = root.right;
         }
         return list;
     }
@@ -254,14 +254,14 @@ public class LeetCode2021_10_29 {
     }
 
     private boolean check2(TreeNode l, TreeNode r) {
-        Queue<TreeNode>queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(l);
         queue.offer(r);
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             l = queue.poll();
             r = queue.poll();
-            if (l==null && r == null) continue;
-            if ((l==null || r==null ) || (l.val != r.val)) return false;
+            if (l == null && r == null) continue;
+            if ((l == null || r == null) || (l.val != r.val)) return false;
             queue.offer(l.left);
             queue.offer(r.right);
 
@@ -274,11 +274,12 @@ public class LeetCode2021_10_29 {
     /**
      * 翻转二叉树：
      * 递归思想：到叶子节点后，其实就是翻转两个子节点
+     *
      * @param root
      * @return
      */
-    public TreeNode invertTree(TreeNode root){
-        if (root == null)return null;
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) return null;
         TreeNode left = invertTree(root.left);
         TreeNode right = invertTree(root.right);
         root.left = right;
