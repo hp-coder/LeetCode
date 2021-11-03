@@ -1,7 +1,5 @@
 package offer;
 
-import java.util.Arrays;
-
 public class LeetCode2021_11_01 {
 
     /**
@@ -31,7 +29,6 @@ public class LeetCode2021_11_01 {
             arr[low++] = arr[high];
             arr[high--] = temp;
         }
-        System.out.println(Arrays.toString(arr));
         low = arr.length-n; high = arr.length-1;
         while(low < high) {
             char temp = arr[low];
