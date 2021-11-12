@@ -1,5 +1,7 @@
 package data_structure;
 
+import support.ListNode;
+
 public class LeetCode2021_10_25 {
     /**
      * 查找插入元素的位置：
@@ -172,23 +174,6 @@ public class LeetCode2021_10_25 {
             }
         }
         return true;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
     /**

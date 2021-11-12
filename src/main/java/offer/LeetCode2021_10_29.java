@@ -1,17 +1,12 @@
 package offer;
 
+import support.ListNode;
+
 /**
  * 剑指offer
  */
 public class LeetCode2021_10_29 {
-    public class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     /**
      * 倒序打印链表：
